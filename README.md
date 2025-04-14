@@ -29,7 +29,13 @@
 
 ## 🔍 Overview
 
-TIS-DPO is a novel approach that enhances Direct Preference Optimization by incorporating token-level importance sampling. This method improves model alignment by focusing optimization on the most critical tokens in responses, leading to better performance with the same computational cost.
+<div align="center">
+<img src="assets/tisdpo.png" width="80%" alt="TIS-DPO Method Overview">
+</div>
+
+TIS-DPO enhances Direct Preference Optimization by incorporating token-level importance sampling. While standard DPO treats the entire response as a single unit, TIS-DPO recognizes that not all tokens contribute equally to response quality. 
+
+Our approach assigns importance weights to each token based on its estimated reward, focusing optimization on the most critical parts of the response. These weights are estimated using the difference in prediction probabilities from a pair of contrastive LLMs trained with forward and reverse DPO.
 
 ## 🔧 Installation
 
@@ -147,7 +153,11 @@ The final model will be saved at `output/tisdpo_Qwen2.5-3B-sft_ultra-feedback_ti
 │   ├── model/                 # Model configurations
 │   └── loss/                  # Loss function configurations
 ├── scripts/                   # Utility scripts
-│   ├── token_weight_estimation.sh  # Token weight estimation script
+│   └── token_weight_estimation.sh  # Token weight estimation script
+├── models/                    # Directory for storing models
+├── datasets/                  # Directory for storing datasets
+├── generated-data/            # Directory for storing generated data
+└── output/                    # Directory for training outputs
 ```
 
 ## 🙏 Acknowledgements
