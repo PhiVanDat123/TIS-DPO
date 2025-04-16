@@ -12,18 +12,18 @@
 </div>
 
 ## 📌 Table of Contents
-- [Overview](#overview)
-- [Installation](#installation)
-- [Dataset Preparation](#dataset-preparation)
-- [Model Preparation](#model-preparation)
-- [Training Pipeline](#training-pipeline)
+- [Overview](#🔍-overview)
+- [Installation](#🔧-installation)
+- [Dataset Preparation](#📊-dataset-preparation)
+- [Model Preparation](#🤖-model-preparation)
+- [Training Pipeline](#🚀-training-pipeline)
   - [Step 1: Training DPO and Reverse DPO Models](#step-1-training-dpo-and-reverse-dpo-models)
   - [Step 2: Token Weight Estimation](#step-2-token-weight-estimation)
   - [Step 3: Training with TIS-DPO](#step-3-training-with-tis-dpo)
-- [Repository Structure](#repository-structure)
-- [Acknowledgements](#acknowledgements)
-- [Citation](#citation)
-- [License](#license)
+- [Repository Structure](#📝-repository-structure)
+- [Acknowledgements](#🙏-acknowledgements)
+- [Citation](#📄-citation)
+- [License](#📜-license)
 
 ## 🔍 Overview
 
