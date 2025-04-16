@@ -20,8 +20,6 @@
   - [Step 1: Training DPO and Reverse DPO Models](#step-1-training-dpo-and-reverse-dpo-models)
   - [Step 2: Token Weight Estimation](#step-2-token-weight-estimation)
   - [Step 3: Training with TIS-DPO](#step-3-training-with-tis-dpo)
-- [Evaluation](#evaluation)
-- [Results](#results)
 - [Repository Structure](#repository-structure)
 - [Acknowledgements](#acknowledgements)
 - [Citation](#citation)
