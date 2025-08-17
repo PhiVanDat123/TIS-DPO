@@ -14,7 +14,7 @@ force_sequential=false  # Set to true if multiprocessing causes issues
 mkdir -p $output_dir
 
 # Run the parallel processing script
-python predict_score_parallel.py \
+python token_weight_estimation.py \
   --model_name_1 $model_name_1 \
   --model_name_2 $model_name_2 \
   --model1_template $model1_template \
