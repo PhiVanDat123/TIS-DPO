@@ -1,8 +1,11 @@
 name: tis-dpo
 channels:
   - defaults
+  - nvidia
+  - conda-forge
+  - pytorch
 dependencies:
-  - python=3.9
+  - python=3.12
   - pip
   - pip:
       - "numpy<2"
