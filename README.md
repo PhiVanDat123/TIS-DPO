@@ -40,8 +40,8 @@ Our approach assigns importance weights to each token based on its estimated rew
 Create and activate the conda environment:
 
 ```bash
-conda env create -f environment.yml
-conda activate tis-dpo
+conda env create -f env.yml
+conda activate tis-dpo-gpu
 ```
 
 ## 📊 Dataset Preparation
