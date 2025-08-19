@@ -1,4 +1,4 @@
-name: tis-dpo-gpu
+name: tis-dpo
 channels:
   - defaults
   - nvidia
