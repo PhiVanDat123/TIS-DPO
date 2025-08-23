@@ -114,8 +114,8 @@ bash scripts/token_weight_estimation.sh
 Train using the estimated token weights:
 
 ```bash
-python -u train.py model=tinyllama model.name_or_path=models/Qwen/Qwen2.5-3B-sft \
-  datasets=[ultra-feedback] loss=tisdpo loss.beta=0.1 \
+python -u train.py model=llama1b model.name_or_path=models/Llama-3.2-1B \
+  datasets=[ultra-feedback-tokenized] loss=tisdpo loss.beta=0.1 \
   gradient_accumulation_steps=2 batch_size=32 eval_batch_size=32 \
   trainer=FSDPTrainer sample_during_eval=false \
   base_data_dir=datasets/ reverse_dataset=false \
