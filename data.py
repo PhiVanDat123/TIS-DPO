@@ -31,7 +31,7 @@ def tokenize_chosen_rejected(batch):
         truncation=True, 
         max_length=256
     )
-    
+
     return {
         "chosen_input_ids": chosen_tokens["input_ids"],
         "chosen_attention_mask": chosen_tokens["attention_mask"],
@@ -50,3 +50,6 @@ tokenized_dataset = dataset.map(
 )
 
 print(tokenized_dataset.column_names)
+
+tokenized_dataset["train"].to_json("datasets/ultra-feedback-tokenized/train.jsonl")
+tokenized_dataset["test"].to_json("datasets/ultra-feedback-tokenized/test.jsonl")
