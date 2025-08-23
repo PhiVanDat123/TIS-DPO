@@ -728,6 +728,7 @@ class FSDPTrainer(BasicTrainer):
         super().__init__(policy, config, seed, run_dir, reference_model, rank, world_size, transform_config=transform_config)
         assert config.model.block_name is not None, 'must specify model.block_name (e.g., GPT2Block or GPTNeoXLayer) for FSDP'
 
+        print("[trainers]", config.model.block_name)
         wrap_class = get_block_class_from_model(policy, config.model.block_name)
         model_auto_wrap_policy = functools.partial(transformer_auto_wrap_policy, transformer_layer_cls={wrap_class},)
 

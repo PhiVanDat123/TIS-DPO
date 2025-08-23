@@ -3,8 +3,8 @@ from datasets import load_dataset
 dataset = load_dataset(
     "json", 
     data_files={
-        "train": "datasets/ultra-feedback/train.jsonl",
-        "test": "datasets/ultra-feedback/test.jsonl"
+        "train": "generated-data/ultra-feedback-tisdpo/train.jsonl",
+        "test": "generated-data/ultra-feedback-tisdpo/test.jsonl"
     }
 )
 
